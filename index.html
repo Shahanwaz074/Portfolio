@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Md Shahanwaz | Electronics & Software Engineer</title>
+  <meta name="description"
+    content="Portfolio of Md Shahanwaz – Electronics & Software Engineer specializing in RF Systems, Android Development, Embedded Systems, and Robotics." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ===== CANVAS ===== -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- ===== LOADER ===== -->
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-ring"></div>
+      <div class="loader-text">INITIALIZING<span class="dots">...</span></div>
+    </div>
+  </div>
+
+  <!-- ===== NAV ===== -->
+  <nav id="navbar">
+    <a href="#hero" class="nav-logo">MS<span class="accent">.</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#contact" class="nav-cta">Hire Me</a>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about" class="mob-link">About</a>
+    <a href="#experience" class="mob-link">Experience</a>
+    <a href="#projects" class="mob-link">Projects</a>
+    <a href="#skills" class="mob-link">Skills</a>
+    <a href="#education" class="mob-link">Education</a>
+    <a href="#contact" class="mob-link">Contact</a>
+  </div>
+
+  <!-- ===== HERO ===== -->
+  <section id="hero">
+    <div class="hero-content">
+      <p class="hero-greeting" id="heroGreeting">Hello, I'm</p>
+      <h1 class="hero-name" id="heroName">Md Shahanwaz</h1>
+      <div class="hero-role">
+        <span class="role-prefix">Let's Connect - </span>
+        <span class="role-cycle" id="roleCycle">Software Development</span>
+      </div>
+      <p class="hero-bio">Electronics &amp; Software Engineer with expertise in RF Systems, Embedded Systems, Software
+        Development, and Robotics—building intelligent, connected solutions.</p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-ghost">Contact Me</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num">1.5+</span><span class="stat-lbl">Years XP</span></div>
+        <div class="stat-div"></div>
+        <div class="stat"><span class="stat-num">10+</span><span class="stat-lbl">Projects</span></div>
+        <div class="stat-div"></div>
+        <div class="stat"><span class="stat-num">3</span><span class="stat-lbl">Domains</span></div>
+      </div>
+    </div>
+    <div class="hero-visual" id="heroVisual">
+      <div class="orbit-container">
+        <div class="orbit orbit-1">
+          <div class="orbit-dot dot-kotlin">Robotics</div>
+        </div>
+        <div class="orbit orbit-2">
+          <div class="orbit-dot dot-iot">3D Models</div>
+        </div>
+        <div class="orbit orbit-3">
+          <div class="orbit-dot dot-rf">IoT</div>
+        </div>
+        <div class="core-chip">
+          <div class="chip-inner">
+            <div class="chip-grid"></div>
+            <span class="chip-label">MCU</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-label">About</div>
+      <h2 class="section-title reveal">Who I Am</h2>
+      <div class="about-grid">
+        <div class="about-card glass reveal">
+          <div class="about-avatar">
+            <div class="avatar-ring"></div>
+            <div class="avatar-core">
+              <img src="passport size pic.jpg" alt="Md Shahanwaz" class="avatar-img">
+            </div>
+            <div class="avatar-badges">
+              <span class="badge">📡 Embedded Systems</span>
+              <span class="badge">📱 Software Development</span>
+              <span class="badge">🤖 Robotics</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-text reveal">
+          <p class="about-desc">
+            Adaptable and innovative <strong>Electronics &amp; Software Engineer</strong>passionate about building
+            systems where hardware meets software. With hands-on experience in RF systems, embedded system, and
+            Android applications, I enjoy turning ideas into working, real-world solutions.
+            From developing embedded systems to exploring robotics and connected technologies, I focus on creating
+            solutions that are not just functional, but efficient and impactful.
+            I’m always learning, experimenting, and pushing my skills to build smarter systems.
+          </p>
+          <div class="about-info-grid">
+            <div class="info-item">
+              <span class="info-icon">📧</span>
+              <span>mdshahanwaz074@gmail.com</span>
+            </div>
+            <div class="info-item">
+              <span class="info-icon">📞</span>
+              <span>+91 7464005291</span>
+            </div>
+            <div class="info-item">
+              <span class="info-icon">📍</span>
+              <span>Delhi, India</span>
+            </div>
+            <div class="info-item">
+              <span class="info-icon">🎓</span>
+              <span>Diploma – Digital Electronics</span>
+            </div>
+          </div>
+          <a href="mailto:mdshahanwaz074@gmail.com" class="btn btn-primary">Get In Touch</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section id="experience" class="section">
+    <div class="container">
+      <div class="section-label">Experience</div>
+      <h2 class="section-title reveal">Work Journey</h2>
+      <div class="timeline">
+
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-line"></div>
+          <div class="tl-card glass">
+            <div class="tl-header">
+              <div>
+                <h3 class="tl-role">Robotics Trainer</h3>
+                <p class="tl-company">MOINEE FOUNDATION</p>
+              </div>
+              <span class="tl-date">Jan 2026 – Present</span>
+            </div>
+            <div class="tl-tags">
+              <span class="tag">Robotics</span><span class="tag">AI</span><span class="tag">IoT</span><span
+                class="tag">3D Printing</span><span class="tag">STEM</span>
+            </div>
+            <ul class="tl-list">
+              <li>Delivering Robotics, AI, IoT &amp; 3D Printing training offline &amp; online</li>
+              <li>Conducting school demonstrations &amp; STEM awareness sessions</li>
+              <li>R&amp;D on DIY kits, microcontrollers &amp; electronic hardware</li>
+              <li>Curriculum design &amp; trainer upskilling for B2B &amp; B2C programs</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-line"></div>
+          <div class="tl-card glass">
+            <div class="tl-header">
+              <div>
+                <h3 class="tl-role">Embedded Software Developer</h3>
+                <p class="tl-company">ACSG System · Defence Sector</p>
+              </div>
+              <span class="tl-date">Aug 2024 – Jan 2026</span>
+            </div>
+            <div class="tl-tags">
+              <span class="tag">RF Systems</span><span class="tag">Spectrum Analyzer</span><span
+                class="tag">VNA</span><span class="tag">PCB</span><span class="tag">LAN</span>
+            </div>
+            <ul class="tl-list">
+              <li>Production &amp; integration of high-power RF modules in jammer systems</li>
+              <li>Rigorous RF testing with Spectrum Analyzer &amp; Vector Network Analyzer</li>
+              <li>Designed Power Control Unit (PCU) for remote LAN-based jammer control</li>
+              <li>Deployed at client sites &amp; resolved signal blocking issues</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-line"></div>
+          <div class="tl-card glass">
+            <div class="tl-header">
+              <div>
+                <h3 class="tl-role">Android App Developer</h3>
+                <p class="tl-company">SpacECE India Foundation · Internship</p>
+              </div>
+              <span class="tl-date">Sep 2024 – Nov 2024</span>
+            </div>
+            <div class="tl-tags">
+              <span class="tag">Kotlin</span><span class="tag">Jetpack Compose</span><span class="tag">MVVM</span><span
+                class="tag">Firebase</span>
+            </div>
+            <ul class="tl-list">
+              <li>Built School &amp; Hospital management systems end-to-end</li>
+              <li>Implemented Clean MVVM architecture with Jetpack Compose UI</li>
+              <li>Learned full Android app lifecycle &amp; BaaS/Firebase integration</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-label">Projects</div>
+      <h2 class="section-title reveal">What I've Built</h2>
+      <div class="projects-grid">
+
+        <div class="proj-card glass reveal" data-type="android">
+          <div class="proj-glow"></div>
+          <div class="proj-icon">📅</div>
+          <h3 class="proj-title">EVENT Management App</h3>
+          <p class="proj-desc">Full-featured Android event management app with Firebase Auth, Realtime Database for
+            seamless multi-user event syncing.</p>
+          <div class="proj-tags">
+            <span class="tag">Kotlin</span><span class="tag">Jetpack Compose</span><span class="tag">Firebase</span>
+          </div>
+          <span class="proj-date">Nov 2024</span>
+        </div>
+
+        <div class="proj-card glass reveal" data-type="android">
+          <div class="proj-glow"></div>
+          <div class="proj-icon">🚌</div>
+          <h3 class="proj-title">Easy Trip App</h3>
+          <p class="proj-desc">Fare-sharing Android travel app built with Jetpack Compose. Simplifies shared commute
+            cost calculations in real-time.</p>
+          <div class="proj-tags">
+            <span class="tag">Kotlin</span><span class="tag">Jetpack Compose</span><span class="tag">Android</span>
+          </div>
+          <span class="proj-date">Dec 2024 – Present</span>
+        </div>
+
+        <div class="proj-card glass reveal" data-type="hardware">
+          <div class="proj-glow"></div>
+          <div class="proj-icon">💡</div>
+          <h3 class="proj-title">Customized Neon Sign Board</h3>
+          <p class="proj-desc">Designed and assembled custom LED neon signs, learning circuit design, soldering, power
+            supply management and fault analysis.</p>
+          <div class="proj-tags">
+            <span class="tag">LED</span><span class="tag">Circuits</span><span class="tag">PCB</span>
+          </div>
+          <span class="proj-date">Jul – Nov 2024</span>
+        </div>
+
+        <div class="proj-card glass reveal" data-type="hardware">
+          <div class="proj-glow"></div>
+          <div class="proj-icon">🔊</div>
+          <h3 class="proj-title">60W Bluetooth Speaker</h3>
+          <p class="proj-desc">High-performance 60W Bluetooth speaker powered by 12V source, focused on audio quality
+            and power efficiency.</p>
+          <div class="proj-tags">
+            <span class="tag">Audio</span><span class="tag">Power Electronics</span><span class="tag">Bluetooth</span>
+          </div>
+          <span class="proj-date">May 2024</span>
+        </div>
+
+        <div class="proj-card glass reveal" data-type="iot">
+          <div class="proj-glow"></div>
+          <div class="proj-icon">🏠</div>
+          <h3 class="proj-title">Voice-Controlled Home Automation</h3>
+          <p class="proj-desc">Arduino-based system to control home appliances via voice commands. Integrated IoT
+            features for user convenience.</p>
+          <div class="proj-tags">
+            <span class="tag">Arduino</span><span class="tag">IoT</span><span class="tag">Voice Control</span>
+          </div>
+          <span class="proj-date">Apr – May 2023</span>
+        </div>
+
+        <div class="proj-card glass reveal" data-type="iot">
+          <div class="proj-glow"></div>
+          <div class="proj-icon">🦯</div>
+          <h3 class="proj-title">Smart Stick (Blind Assist)</h3>
+          <p class="proj-desc">Arduino-based smart walking stick for visually impaired people, using sensors for
+            obstacle detection and safety alerts.</p>
+          <div class="proj-tags">
+            <span class="tag">Arduino</span><span class="tag">Sensors</span><span class="tag">IoT</span>
+          </div>
+          <span class="proj-date">Mar 2024</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-label">Skills</div>
+      <h2 class="section-title reveal">My Toolbox</h2>
+      <div class="skills-wrapper">
+
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title"><span class="sg-icon">📱</span> Android & Software</h3>
+          <div class="skill-tags">
+            <span class="stag">Kotlin</span>
+            <span class="stag">Jetpack Compose</span>
+            <span class="stag">MVVM</span>
+            <span class="stag">Firebase</span>
+            <span class="stag">Java</span>
+            <span class="stag">Android Studio</span>
+            <span class="stag">Python</span>
+            <span class="stag">Blender</span>
+            <span class="stag">TinkerCAD</span>
+            <span class="stag">MySQL</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title"><span class="sg-icon">🔌</span> Embedded & Hardware</h3>
+          <div class="skill-tags">
+            <span class="stag">Arduino</span>
+            <span class="stag">ARM Microcontroller</span>
+            <span class="stag">Raspberry Pi</span>
+            <span class="stag">PCB Design</span>
+            <span class="stag">PCB Soldering</span>
+            <span class="stag">RF Systems</span>
+            <span class="stag">Spectrum Analyzer</span>
+            <span class="stag">VNA</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title"><span class="sg-icon">🌐</span> Networking & IoT</h3>
+          <div class="skill-tags">
+            <span class="stag">Internet of Things</span>
+            <span class="stag">Networking</span>
+            <span class="stag">MySQL</span>
+            <span class="stag">Embedded Systems</span>
+            <span class="stag">Technical Support</span>
+            <span class="stag">Git</span>
+            <span class="stag">Operating Systems</span>
+            <span class="stag">VR / AR</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title"><span class="sg-icon">🛠️</span> Tools & Productivity</h3>
+          <div class="skill-tags">
+            <span class="stag">Adobe Photoshop</span>
+            <span class="stag">MS Word</span>
+            <span class="stag">MS Excel</span>
+            <span class="stag">Operating Systems</span>
+            <span class="stag">Problem Solving</span>
+            <span class="stag">Teaching</span>
+            <span class="stag">English (Fluent)</span>
+            <span class="stag">3D Design</span>
+            <span class="stag">Avishkaar kits</span>
+            <span class="stag">LEGO</span>
+            <span class="stag">VEX IQ</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION ===== -->
+  <section id="education" class="section">
+    <div class="container">
+      <div class="section-label">Education</div>
+      <h2 class="section-title reveal">Academic Background</h2>
+      <div class="edu-grid">
+
+        <div class="edu-card glass reveal">
+          <div class="edu-icon">🎓</div>
+          <div class="edu-info">
+            <h3>Diploma – Digital Electronics &amp; Communication Engineering</h3>
+            <p class="edu-inst">Chhotu Ram Rural Institute Of Technology</p>
+            <p class="edu-meta">CGPA: 7.00/10 &nbsp;·&nbsp; 2022 – 2025</p>
+          </div>
+        </div>
+
+        <div class="edu-card glass reveal">
+          <div class="edu-icon">📚</div>
+          <div class="edu-info">
+            <h3>Senior Secondary (XII) – Science</h3>
+            <p class="edu-inst">S.N.S.D.N.G Boys High School</p>
+            <p class="edu-meta">Bihar School Examination Board (BSEB) &nbsp;·&nbsp; 2023</p>
+          </div>
+        </div>
+
+        <div class="edu-card glass reveal">
+          <div class="edu-icon">🏫</div>
+          <div class="edu-info">
+            <h3>Secondary (X) – CBSE</h3>
+            <p class="edu-inst">Mount Carmel Convent School, Jainagar</p>
+            <p class="edu-meta">CBSE &nbsp;·&nbsp; 2021</p>
+          </div>
+        </div>
+
+      </div>
+
+      <h2 class="section-title reveal" style="margin-top:4rem;">Certifications</h2>
+      <div class="cert-card glass reveal">
+        <div class="cert-icon">🏆</div>
+        <div class="cert-info">
+          <h3>Android App Development</h3>
+          <p class="cert-org">Internshala Trainings · Virtual · Jun – Jul 2024</p>
+          <p class="cert-desc">8-week certified training covering Kotlin, Jetpack Compose, MVVM, Firebase, Google Play
+            Store publishing &amp; AI/ML in Android. Final score: <strong>68%</strong></p>
+          <div class="cert-tags">
+            <span class="tag">Kotlin</span><span class="tag">Jetpack Compose</span><span
+              class="tag">Firebase</span><span class="tag">Google Play</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-label">Contact</div>
+      <h2 class="section-title reveal">Let's Connect</h2>
+      <p class="contact-sub reveal">Open to opportunities in Android, Embedded Systems, Robotics &amp; RF Engineering.
+      </p>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <a href="mailto:mdshahanwaz074@gmail.com" class="contact-item glass">
+            <span class="ci-icon">📧</span>
+            <div><strong>Email</strong><br />mdshahanwaz074@gmail.com</div>
+          </a>
+          <a href="tel:+917464005291" class="contact-item glass">
+            <span class="ci-icon">📞</span>
+            <div><strong>Phone</strong><br />+91 7464005291</div>
+          </a>
+          <div class="contact-item glass">
+            <span class="ci-icon">📍</span>
+            <div><strong>Location</strong><br />Delhi, India</div>
+          </div>
+          <div class="contact-hobbies glass">
+            <h4>Interests</h4>
+            <div class="hobby-tags">
+              <span class="stag">🔧 DIY Electronics</span>
+              <span class="stag">📱 Android Apps</span>
+              <span class="stag">📡 New Technologies</span>
+              <span class="stag">🧮 STEM &amp; Robotics</span>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form glass reveal" id="contactForm"
+          action="https://docs.google.com/forms/d/e/1FAIpQLSd5QWLCgBJGULk15uKGU9MWvee0VRS0ypy4wwK6u1mIWSwFhw/formResponse"
+          method="POST" target="hidden_iframe">
+          <div class="form-group">
+            <label for="fname">Your Name</label>
+            <input type="text" id="fname" name="entry.173726800" placeholder="John Doe" required />
+          </div>
+          <div class="form-group">
+            <label for="femail">Your Email</label>
+            <input type="email" id="femail" name="entry.941643046" placeholder="john@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="fmsg">Message</label>
+            <textarea id="fmsg" name="entry.1108218481" rows="4" placeholder="I'd love to collaborate on..."
+              required></textarea>
+          </div>
+          <input type="hidden" name="fvv" value="1">
+          <input type="hidden" name="pageHistory" value="0">
+          <button type="submit" class="btn btn-primary" id="submitBtn" style="width:100%;">Send Message 🚀</button>
+        </form>
+
+        <div id="formSuccess" class="form-success glass reveal" style="display: none;">
+          <div class="success-icon">🚀</div>
+          <h3 class="success-title">Message Received!</h3>
+          <p class="success-msg">Thanks for reaching out! I'll get back to you as soon as possible.</p>
+          <button type="button" class="btn btn-ghost" onclick="location.reload()" style="width:100%; margin-left:0;">Send Another</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer id="footer">
+    <p>Designed &amp; Built by <span class="accent">Md Shahanwaz</span> · 2024</p>
+    <p class="footer-sub">Electronics &amp; Software Engineer · Delhi, India</p>
+  </footer>
+
+  <!-- Libraries -->
+  <!-- Hidden Iframe for Google Form Submission -->
+  <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(window.submitted) { showSuccess(); }"></iframe>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
