@@ -254,7 +254,7 @@ const contactForm = document.getElementById('contactForm');
 if (contactForm) {
   contactForm.addEventListener('submit', () => {
     window.submitted = true;
-    console.log('Form submitting to Google Forms...');
+    console.log('Form submitting...');
     const submitBtn = document.getElementById('submitBtn');
     if (submitBtn) {
       submitBtn.disabled = true;
@@ -262,3 +262,72 @@ if (contactForm) {
     }
   });
 }
+
+/* ===== ENHANCED SECURITY & DATA MASKING ===== */
+(function initSecurity() {
+  // 1. Data Masking (Base64)
+  const _0x5a1 = ['bWRzaGFoYW53YXowNzRAZ21haWwuY29t', 'KzkxIDc0NjQwMDUyOTE=', 'aHR0cHM6Ly9kb2NzLmdvb2dsZS5jb20vZm9ybXMvZC9lLzFGQUlwUUxzZDVRV0xDZ0JKR1VMazE1dUtHVTlNVmVlMFZSUzB5cHl0d3dLNnUxbUlXU3dGaHcvZm9ybVJlc3BvbnNl'];
+  const d = (s) => atob(s);
+
+  function injectData() {
+    const e = d(_0x5a1[0]);
+    const p = d(_0x5a1[1]);
+    const f = d(_0x5a1[2]);
+
+    // Email
+    document.querySelectorAll('[id^="em-"]').forEach(el => el.textContent = e);
+    document.querySelectorAll('[id^="gm-"]').forEach(el => el.href = 'mailto:' + e);
+    
+    // Phone
+    document.querySelectorAll('[id^="ph-"]').forEach(el => {
+      if (el.tagName === 'A') el.href = 'tel:' + p.replace(/\s/g, '');
+      else el.textContent = p;
+    });
+
+    // Form
+    if (contactForm) contactForm.action = f;
+  }
+
+  // 2. Inspection Deterrence
+  function blockDevTools() {
+    // Disable Right Click
+    document.addEventListener('contextmenu', e => e.preventDefault());
+
+    // Disable Shortcuts
+    document.addEventListener('keydown', e => {
+      // F12, Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+U, Ctrl+Shift+C
+      if (
+        e.keyCode === 123 || 
+        (e.ctrlKey && e.shiftKey && (e.keyCode === 73 || e.keyCode === 74 || e.keyCode === 67)) || 
+        (e.ctrlKey && e.keyCode === 85)
+      ) {
+        e.preventDefault();
+        return false;
+      }
+    });
+  }
+
+  // 3. Anti-Debugger (Aggressive)
+  function antiDebug() {
+    const start = new Date();
+    debugger;
+    const end = new Date();
+    if (end - start > 100) {
+      // DevTools open
+      document.body.innerHTML = '<div style="height:100vh;display:flex;align-items:center;justify-content:center;background:#050a14;color:#00f5ff;font-family:sans-serif;text-align:center;padding:20px;"><h2>Access Restricted</h2><p>Developer tools are disabled for security reasons. Please close them and refresh.</p></div>';
+    }
+  }
+
+  // Initialize
+  window.addEventListener('DOMContentLoaded', () => {
+    injectData();
+    blockDevTools();
+    
+    // Periodically check for debugger
+    setInterval(antiDebug, 2000);
+  });
+
+  // Console warning
+  console.log("%cSTOP!", "color: red; font-size: 50px; font-weight: bold; -webkit-text-stroke: 1px black;");
+  console.log("%cThis is a browser feature intended for developers. If someone told you to copy-paste something here, it is a scam and will give them access to your data.", "font-size: 20px;");
+})();
